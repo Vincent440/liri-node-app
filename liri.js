@@ -177,9 +177,10 @@ function doWhatItSayss() {
       if (err) {
         return console.log(err);
       }
+      debugger;
       data = data.split(",");//breaks up the command from the input at the "," comma
       let fileCommand = data[0];
-      let fileSearch = data[1].slice(1,-1).replace(/ /g, "+");//replace the second array index " " with +'s to create a usable search input
+      let fileSearch = data[1].slice(1).replace(/ /g, "+");//replace the second array index " " with +'s to create a usable search input
       liriCall( fileCommand , fileSearch );
     });
 }
@@ -203,8 +204,8 @@ function searchPromt() {//DEFAULT TO THIS, LATER USE INQUIRER FUNCTION TO TAKE I
      {
       name: "searchValue",
       message: "Enter what you would like to search for here: ",
-      validate: function(value){
-        if(value.length > 0){
+      validate: function(value) {
+        if(value.length > 0) {
             return true;
         } else {
           console.log(" Please enter something to search for ");
