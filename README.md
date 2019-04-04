@@ -1,5 +1,7 @@
 # liri-node-app
 
+Welcome to my LIRI Application if you like it please check out my [Github Profile](https://github.com/Vincent440) to see my repositories  And don't forget to view my [Github Portfolio page](https://vincent440.github.io/) well you are there Thanks!
+
    * LIRI is a _Language Interpretation and Recognition Interface_. LIRI is designed to be a command line node app that takes in parameters and displays data to the console.
 
    * LIRI will search:
@@ -18,7 +20,7 @@
 
 ---
 
-## This application Allows the user to search 3 different API's depending on the selected or Inputted command. 
+## This application Allows the user to search 3 different API's determined by the inputted command line arguements. 
 
 The liri command line node application allows you to search three separate APIs quickly in one application to display Data, using keywords for the commands to determine which API to search then the app will display the results of that API's response to the console after api request is done. 
 
@@ -62,10 +64,15 @@ The liri command line node application allows you to search three separate APIs 
 _**WARNING: If you are not familiar with the bash/terminal this app may not be suitible for you but feel free to try anyways**_.
 
 Welcome user! So you want to use my command line node app? Okay! lets get started.
- You are going to need to have [Node.js](https://nodejs.org/en/) Installed in order to run this javascript file in the terminal or command line. Assuming you are familiar with node as well as the terminal/cli and are ready to move on continue to the next steps 
+
+You are going to need to have [Node.js](https://nodejs.org/en/) Installed in order to run this javascript file in the terminal or command line.
+ 
+Assuming you are familiar with node as well as the terminal/cli and are ready to move on continue to the next steps 
 
 
- * STEP ONE: You will need to go to my [Github](https://github.com/Vincent440/liri-node-app) repository, you can then either fork the repository and copy the Clone with HTTPS link and run the following command from your terminal or bash window or clone my repository the same way using the link on my Github repo the command will look like this in the terminal:
+* STEP ONE: You will need to go to my [Github](https://github.com/Vincent440/liri-node-app) repository, you can then either fork the repository and copy the Clone with HTTPS link
+  then run the following command with the link copied from your forked version of the repo to replace what comes after "git clone" from your terminal
+  or bash window or clone my repository the same way using the link on my Github repo the command will look like this in the terminal/CLI:
 
 ```
 git clone https://github.com/Vincent440/liri-node-app.git
@@ -95,11 +102,13 @@ SPOTIFY_SECRET=YOUR SPOTIFY SECRET WILL NEED TO BE STORED HERE
 
 ```
 
-Once you have the Spotify ID & Secret in place of the text above after the "=". you will be ready to run the liri.js application in the terminal to use it! Open up your terminal/bash CLI and SEE BELOW for a preview of the application in use to help you get started!
+* FINALLY: Once you have the Spotify ID & Secret in place of the text above after the "=". you will be ready to run the liri.js application in the terminal to use it!
+
+  Open up your terminal/bash CLI and SEE BELOW for a preview of the application in use to help you get started!
 
 --- 
 
-## Using liri.js & _Example Commands_ 
+# DEMO execution of the liri.js & _Example Commands_
 
 
 
@@ -109,3 +118,4 @@ node liri spotify-this-song Wake me up when september ends
 node liri movie-this Guardians of the Galaxy Vol.2
 node liri do-what-it-says
 ```
+
