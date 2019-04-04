@@ -119,11 +119,11 @@ SPOTIFY_SECRET=YOUR SPOTIFY SECRET WILL NEED TO BE STORED HERE
 
 --- 
 
-# DEMO execution of the liri.js & _Example Commands_
+# DEMO Video of the liri.js & _Example Command_ screenshots to view
 
 Check out the video I made of the liri.js application in use here on my youtube channel: 
 
-### [liri.js Demo Video Youtube link](https://youtu.be/nqmej0YH9MI)
+# [liri.js Demo Video Youtube link](https://youtu.be/nqmej0YH9MI)
 
 ```
 node liri concert-this A Day To Remember
@@ -131,3 +131,46 @@ node liri spotify-this-song Wake me up when september ends
 node liri movie-this Guardians of the Galaxy Vol.2
 node liri do-what-it-says
 ```
+
+If no command is input such as "node liri" the npm inquirer package will be called and you will see the following prompt to select a command:
+
+![No input Example](images/liriNocommand.png)
+
+The following command will read from the random.txt file and display a search based off of the command before the "," and the search parameters that are in "qoutations" after the comma. 
+
+```
+node liri do-what-it-says
+```
+
+Will display or something similar depending on what text is inside the random.txt file:
+
+![do-what-it-says example](images/dowhatitsays.png)
+
+The command:
+
+```
+node liri concert-this A Day To Remember
+```
+
+Will display: 
+
+![concert-this](images/concertthis.png)
+
+The command:
+```
+node liri spotify-this-song Wake me up when september ends
+```
+
+Will display: 
+
+![spotify-this-song](images/spotifythissong.png)
+
+
+The command:
+```
+node liri movie-this Guardians of the Galaxy Vol.2
+```
+
+Will display: 
+
+![movie-this](images/moviethis.png)

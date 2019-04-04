@@ -32,12 +32,12 @@ function bandsInTownApi(bands) {//bands in town api call, if no input selected c
    return searchPromt();
   }
   searchLog = bands.replace(/\+/g, " ");
-  console.log("===============  SEARCHING Bands In Town API for: " + searchLog + "  ===============");
+  console.log("\n\n===============  SEARCHING Bands In Town API for: " + searchLog + "  ===============");
   axios.get("https://rest.bandsintown.com/artists/" + bands + "/events?app_id=codingbootcamp").then(response => {//data handling
         let events = response.data;
         for ( let eventIndex = 0 ; eventIndex < events.length; eventIndex++ ) {//Loop through entire response array
           console.log("\n================|  SHOWING EVENTS FOR: " + searchLog 
-          +  " Event #" +  eventIndex +  "  |=================\n");
+          +  " Event #" +  (eventIndex +1)+  "  |=================\n");
           console.log("Venue Name: " + events[eventIndex].venue.name); //Name of the venue
           console.log("Location: " + events[eventIndex].venue.city + ", " + events[eventIndex].venue.region 
           + " " + events[eventIndex].venue.country ); //Venue location
@@ -120,7 +120,7 @@ function doWhatItSayss() {
     });
 }
 function searchPromt() {//inquirer search prompt to allow multiple searches and default to if there is no input. 
-  console.log("\n\n\n\n------- Welcome to the LIRI Application please enter a valid [command] and [search input]  ------\n");
+  console.log("\n\n\n\n\n\n\n\n-------  Welcome to the LIRI Application please enter a valid [command] and [search input]  ------\n");
   console.log("Valid LIRI Commands are:\nnode liri < command > < search >\n")
   console.log("concert-this < Artist to search for on Bands In Town >"
     + "\nspotify-this-song < Track to search for on Spotify >\nmovie-this < Movie to search for on OMDB >"+
@@ -159,7 +159,7 @@ function searchAgain(){
       {
       name: "continue",
       type: "confirm",
-      message:"Would you like to search again? ",
+      message:"\nWould you like to search again? ",
       default: false
      }
     ])
