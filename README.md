@@ -20,12 +20,16 @@
 
 ## This application Allows the user to search 3 different API's depending on the selected or Inputted command. 
 
-The liri command line node application allows you to search three separate APIs quickly in one application to display Data, using keywords for the commands to determine which API to search then the app will display the results of that API's response to the console after api request is done. LIRI will then prompt the user to see if they would like to search again. 
+The liri command line node application allows you to search three separate APIs quickly in one application to display Data, using keywords for the commands to determine which API to search then the app will display the results of that API's response to the console after api request is done. 
 
-      If they select NO the liri.js process will terminate 
+    LIRI will then prompt the user to see if they would like to search again. 
 
-      If they select YES
-      liri will then display a list of the three possible commands to search from before allowing the user to input a new search after the command is selected.
+    If they select NO,
+     the liri.js process will terminate.
+
+    If they select YES,
+     liri will then display a list of the three possible commands to search from.
+     Once a command is selected the user can type what they would like that command to search.
 
  _If any of the searches an error occurs the error data will display and prompt the user to select Yes or no to if they would like to ask another question, default: No, closes the app. Answering Yes allows you to search again until you select no to the Search again prompt._ 
 
