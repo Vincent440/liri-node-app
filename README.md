@@ -119,11 +119,12 @@ SPOTIFY_SECRET=YOUR SPOTIFY SECRET WILL NEED TO BE STORED HERE
 
 --- 
 
-# DEMO Video of the liri.js & _Example Command_ screenshots to view
 
-Check out the video I made of the liri.js application in use here on my youtube channel: 
+#   __Click here to watch the [liri.js Demo Video On Youtube](https://youtu.be/nqmej0YH9MI)__  __*Below are Examples screenshots of running the liri application*__
 
-# [liri.js Demo Video Youtube link](https://youtu.be/nqmej0YH9MI)
+
+---
+
 
 ```
 node liri concert-this A Day To Remember
