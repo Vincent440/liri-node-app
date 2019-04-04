@@ -91,7 +91,7 @@ After you should see the following :
 
 ![git cloning](images/clonefiles.png)
 
-* Enter this command into the terminal to change into the directory the liri.js file is located:
+* Enter this command into the terminal to change into the directory the liri.js file is located.
 
 Command:
 
