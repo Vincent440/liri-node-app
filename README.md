@@ -1,8 +1,10 @@
 # liri-node-app
 
-Welcome to my LIRI Application if you like it please check out my [Github Profile](https://github.com/Vincent440) to see my repositories  And don't forget to view my [Github Portfolio page](https://vincent440.github.io/) well you are there Thanks!
+Welcome to my LIRI Application if you like it please check out my [Github Profile](https://github.com/Vincent440) to see my repositories.
 
-   * LIRI is a _Language Interpretation and Recognition Interface_. LIRI is designed to be a command line node app that takes in parameters and displays data to the console.
+Don't forget to view my [Github Portfolio page](https://vincent440.github.io/) well you are there Thanks!
+
+LIRI is a _Language Interpretation and Recognition Interface_. LIRI is designed to be a command line node app that takes in parameters and displays data to the console.
 
    * LIRI will search:
 
