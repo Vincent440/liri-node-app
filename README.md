@@ -26,7 +26,7 @@ LIRI is a _Language Interpretation and Recognition Interface_. LIRI is designed 
 
 The liri command line node application allows you to search three separate APIs quickly in one application to display Data, using keywords for the commands to determine which API to search then the app will display the results of that API's response to the console after api request is done. 
 
-    LIRI will then prompt the user to see if they would like to search again. 
+LIRI will then prompt the user to see if they would like to search again:
 
     If they select NO,
      the liri.js process will terminate.
@@ -35,7 +35,9 @@ The liri command line node application allows you to search three separate APIs 
      liri will then display a list of the three possible commands to search from.
      Once a command is selected the user can type what they would like that command to search.
 
- _If any of the searches an error occurs the error data will display and prompt the user to select Yes or no to if they would like to ask another question, default: No, closes the app. Answering Yes allows you to search again until you select no to the Search again prompt._ 
+ _If any of the searches encounters an error the error data will display and prompt the user to select Yes or no to if they would like to ask another question,_
+
+ _default: No, closes the app. Answering Yes allows you to search again until you select no to the Search again prompt._ 
 
 ### How the liri.js App works
 
