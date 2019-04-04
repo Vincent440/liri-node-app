@@ -120,7 +120,7 @@ SPOTIFY_SECRET=YOUR SPOTIFY SECRET WILL NEED TO BE STORED HERE
 --- 
 
 
-#   __Click here to watch the [liri.js Demo Video On Youtube](https://youtu.be/nqmej0YH9MI)__  __*Below are Examples screenshots of running the liri application*__
+#   __Click here to watch the [liri.js Demo Video On Youtube](https://youtu.be/nqmej0YH9MI)__  __*Below are Example screenshots of running the liri application*__
 
 
 ---
