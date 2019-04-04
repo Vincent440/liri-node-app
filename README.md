@@ -24,7 +24,8 @@ LIRI is a _Language Interpretation and Recognition Interface_. LIRI is designed 
 
 ## This application Allows the user to search 3 different API's determined by the inputted command line arguements. 
 
-The liri command line node application allows you to search three separate APIs quickly in one application to display Data, using keywords for the commands to determine which API to search then the app will display the results of that API's response to the console after api request is done. 
+The liri command line node application allows you to search three separate APIs quickly in one application to display Data,
+ using keywords for the commands to determine which API to search then the app will display the results of that API's response to the console after api request is done. 
 
 LIRI will then prompt the user to see if they would like to search again:
 
@@ -73,19 +74,26 @@ You are going to need to have [Node.js](https://nodejs.org/en/) Installed in ord
  
 Assuming you are familiar with node as well as the terminal/cli and are ready to move on continue to the next steps 
 
- *STEP ONE:*
- * You will need to go to my [Github](https://github.com/Vincent440/liri-node-app) repository, you can then either fork the repository and copy the Clone with HTTPS link
-  then run the following command with the link copied from your forked version of the repo to replace what comes after "git clone" from your terminal
-  or bash window or clone my repository the same way using the link on my Github repo the command will look like this in the terminal/CLI:
+*STEP ONE:*
+* You will need to go to my [Github](https://github.com/Vincent440/liri-node-app) repository,
+ you can then either fork the repository and copy the Clone with HTTPS link then run the following command
+ with the link copied from your forked version of the repo to replace what comes after "git clone" from your terminal
+ or bash window or clone my repository the same way using the link on my Github repo the command will look like this in the terminal/CLI:
+
+Command:
 
 ```
 git clone https://github.com/Vincent440/liri-node-app.git
 ```
-Running that command on your computers terminal or command line will download the repository to your computers local drive. and you should see the following :
+* Running that command on your computers terminal or command line will download the repository to your computers local drive. 
 
- ![git cloning](images/clonefiles.png)
+After you should see the following :
 
-Once you have the files go into that folder that contains the liri.js to this you should just have to enter the command into the terminal next:
+![git cloning](images/clonefiles.png)
+
+* Enter this command into the terminal to change into the directory the liri.js file is located:
+
+Command:
 
 ```
 cd liri-node-app/
@@ -93,19 +101,21 @@ cd liri-node-app/
 ![changing directories](images/cddirectory.png)
 
 *STEP TWO:*
-* You will have to run npm install to download the required npm packages in order for the application to function. that command will look like:
+* You will have to run npm install to download the required npm packages in order for the application to function. 
+
+Command:
 
 ```
 npm install
 npm i
 ```
-After running that command in the terminal you should have all the required packages installed a package-lock.json file created with a node modules directory made and populated with the required files.
+* After running that command in the terminal you should have all the required packages installed a package-lock.json file created with a node modules directory made and populated with the required files.
 
 You should see a screen similar to this you run npm install:
 
 ![npm install command](images/npminstall.png)
 
- *STEP THREE:*
+*STEP THREE:*
 * You are going to need to create a .env file in the same directory (this is where your Spotify api ID & Secret will go later).
 
 * After you have all the files created you will need to make sure you have an API Key for each of the API's.
