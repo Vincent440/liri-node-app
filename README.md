@@ -122,9 +122,32 @@ SPOTIFY_SECRET=YOUR SPOTIFY SECRET WILL NEED TO BE STORED HERE
 
 #   __Click here to watch the [liri.js Demo Video On Youtube](https://youtu.be/nqmej0YH9MI)__  __*Below are Example screenshots of running the liri application*__
 
-
 ---
 
+Once you have searched for anything or if you didn't enter a valid command you will be prompted to select one of the three API call commands 
+
+  * concert-this < Band/artist > will display:
+     * Name of the venue
+     * Venue location
+     * Date of the Event (formatted as "MM/DD/YYYY" using moment)
+
+  * spotify-this-song < song/track > will display:
+     * Artist(s)
+     * The song's name
+     * A preview link of the song from Spotify
+     * The album that the song is from
+
+  * movie-this < movie/film > will display: 
+       * Title of the movie.
+       * Year the movie came out.
+       * IMDB Rating of the movie.
+       * Rotten Tomatoes Rating of the movie.
+       * Country where the movie was produced.
+       * Language of the movie.
+       * Plot of the movie.
+       * Actors in the movie.
+
+Here are the four valid commands the liri application will accept initially running the application.
 
 ```
 node liri concert-this A Day To Remember
@@ -175,3 +198,7 @@ node liri movie-this Guardians of the Galaxy Vol.2
 Will display: 
 
 ![movie-this](images/moviethis.png)
+
+---
+
+_This application was created by **Vince Shury** for the Case Western Reserve University Coding Bootcamp._
