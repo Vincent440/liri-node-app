@@ -79,9 +79,16 @@ Assuming you are familiar with node as well as the terminal/cli and are ready to
 ```
 git clone https://github.com/Vincent440/liri-node-app.git
 ```
- Running that command on your computers terminal or command line will download the repository to your computers local drive. and you should see the following :
+Running that command on your computers terminal or command line will download the repository to your computers local drive. and you should see the following :
 
- [image of git clone screen shot will go here]
+ ![git cloning](images/clonefiles.png)
+
+Once you have the files go into that folder that contains the liri.js to this you should just have to enter the command into the terminal next:
+
+```
+cd liri-node-app/
+```
+![changing directories](images/cddirectory.png)
 
 
 * STEP TWO: You will have to run npm install to download the required npm packages in order for the application to function. that command will look like:
@@ -92,7 +99,9 @@ npm i
 ```
 After running that command in the terminal you should have all the required packages installed a package-lock.json file created with a node modules directory made and populated with the required files.
 
-[image of node packages successfully completed install goes here]
+You should see a screen similar to this you run npm install:
+
+![npm install command](images/npminstall.png)
 
 * STEP THREE: You are going to need to create a .env file in the same directory (this is where your Spotify api ID & Secret will go later). After you have all the files created you will need to make sure you have an API Key for each of the API's. Two are included in the REPO you will however need a Spotify Key Visit [Spotifys Developer page here](https://developer.spotify.com/my-applications/#!/applications/create) to get one. Your spotify api key will go in the **.env** file which will look like : 
 
@@ -112,7 +121,9 @@ SPOTIFY_SECRET=YOUR SPOTIFY SECRET WILL NEED TO BE STORED HERE
 
 # DEMO execution of the liri.js & _Example Commands_
 
+Check out the video I made of the liri.js application in use here on my youtube channel: 
 
+### [liri.js Demo Video Youtube link](https://youtu.be/nqmej0YH9MI)
 
 ```
 node liri concert-this A Day To Remember
@@ -120,4 +131,3 @@ node liri spotify-this-song Wake me up when september ends
 node liri movie-this Guardians of the Galaxy Vol.2
 node liri do-what-it-says
 ```
-
