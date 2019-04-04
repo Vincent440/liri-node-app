@@ -201,4 +201,4 @@ Will display:
 
 ---
 
-_This application was created by **Vince Shury** for the Case Western Reserve University Coding Bootcamp._
+_This application was created by **Vincent Shury** for the Case Western Reserve University Coding Bootcamp._
