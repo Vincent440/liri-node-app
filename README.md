@@ -221,4 +221,4 @@ Will display:
 
 ---
 
-_This application was created by **Vincent Shury** for the Case Western Reserve University Coding Bootcamp._
+_This application was created by [**Vincent Shury**](https://github.com/Vincent440) for the Case Western Reserve University Coding Bootcamp._
