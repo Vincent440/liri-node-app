@@ -44,11 +44,11 @@ function bandsInTownApi(bands) {//bands in town api call, if no input selected c
           let eventTime = events[eventIndex].datetime;//date of event
           console.log("Event Date: " + moment(eventTime).format("MM/DD/YYYY") + "\n");
         }
-        searchAgain();
+        searchPromt();
       }
     ).catch(error => {
         console.log("\nBands In Town Error Data: " + error +"\n\n");
-        return searchAgain();
+        return searchPromt();
       }
     );
 }
@@ -73,11 +73,11 @@ function movieDataCall(movieSearch) {//OMDB Axios api call
         console.log("PLOT: " + movie.Plot); //PLOT OF THE MOVIE
         console.log("ACTORS: " + movie.Actors); //ACTORS IN THE MOVIE
         console.log("\n==========================================================================\n");
-        searchAgain();
+        searchPromt();
       }
     ).catch(error => {//error handling display error data and prompt new search
         console.log("An OMDB error occurred error data: "+error+"\n\n");
-        return searchAgain();
+        return searchPromt();
       }
     );
 }
@@ -91,7 +91,7 @@ function spotifyCall(song) {
   spotify.search({ type: "track", query: song }, (err, data) =>{
     if (err) {
       console.log("A Spotify error occurred: " + err +"\n\n");
-      return searchAgain();
+      return searchPromt();
     } 
     let results = data.tracks.items;
     for (let sIndex = 0; sIndex < 5; sIndex++) {// sIndex = Spotify data array index number print 5 songs that match search params.
@@ -102,7 +102,7 @@ function spotifyCall(song) {
         console.log( "\nALBUM NAME:  " + results[sIndex].album.name);//ALBUM NAME THE SONG IS FROM 
     }
     console.log("\n==================================  END OF " + searchLog + " SPOTIFY SEARCH  =================================================\n");
-    searchAgain();
+    searchPromt();
   });
 }
 function doWhatItSayss() {
@@ -110,7 +110,7 @@ function doWhatItSayss() {
     fs.readFile("random.txt", "utf8", (err, data)=> {
       if (err) {
         console.log("Error reading from random.txt file error: "+err);
-        return searchAgain();
+        return searchPromt();
         
       }
       data = data.split(",");//breaks up the command from the input at the "," comma
@@ -132,7 +132,7 @@ function searchPromt() {//inquirer search prompt to allow multiple searches and 
       name: "command",
       type: "list",
       message:"Select a Command for what you would like to do:",
-      choices:["concert-this","spotify-this-song","movie-this"]
+      choices:["concert-this","spotify-this-song","movie-this","EXIT LIRI"]
      },
      {
       name: "searchValue",
@@ -144,33 +144,21 @@ function searchPromt() {//inquirer search prompt to allow multiple searches and 
           console.log(" Please enter something to search for ");
             return false;
         }
+    },when: answers =>{
+      if (answers.command === "EXIT LIRI") {
+        return false;
+      }
+      return true;
     }
      }
     ])
     .then(answers => {
      let inqCommand = answers.command;
+      if (inqCommand === "EXIT LIRI" ){
+        return console.log("\nGoodbye! Thanks for using the LIRI application\n");
+      }
      let inqSearch = answers.searchValue.replace(/ /g, "+");
      liriCall(inqCommand,inqSearch);
-    });
-}
-function searchAgain(){
-  inquirer
-    .prompt([
-      {
-      name: "continue",
-      type: "confirm",
-      message:"\nWould you like to search again? ",
-      default: false
-     }
-    ])
-    .then(answers => {
-     let searchAgain = answers.continue;
-     if (searchAgain){
-       searchPromt();
-     }
-     else {
-      return console.log("\nThanks for using the LIRI application\n");
-     }
     });
 }
 liriCall(command, search);
