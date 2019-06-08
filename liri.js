@@ -111,7 +111,6 @@ function doWhatItSayss() {
       if (err) {
         console.log("Error reading from random.txt file error: "+err);
         return searchPromt();
-        
       }
       data = data.split(",");//breaks up the command from the input at the "," comma
       let fileCommand = data[0];
@@ -141,8 +140,7 @@ function searchPromt() {//inquirer search prompt to allow multiple searches and 
         if(value.length > 0) {
             return true;
         } else {
-          console.log(" Please enter something to search for ");
-            return false;
+          return console.log(" Please enter something to search for ");
         }
     },when: answers =>{
       if (answers.command === "EXIT LIRI") {
